@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Vanisha Pathak</h1>
+    <p>Aspiring Web Developer & Tech Enthusiast</p>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate BTech student specializing in Electronics and Instrumentation. I enjoy turning complex problems into elegant solutions through coding and hardware integration. I build responsive websites and drones, and I love learning new tech every day.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-gallery">
+      <div class="project-card">
+        <h3>Drone Delivery System</h3>
+        <p>Autonomous QR-scanning drone using Raspberry Pi and MAVLink for smart payload drop.</p>
+      </div>
+      <div class="project-card">
+        <h3>Student Portfolio Website</h3>
+        <p>HTML/CSS/JS-based site to showcase skills, academic work, and team achievements.</p>
+      </div>
+      <div class="project-card">
+        <h3>Bus Route Optimizer</h3>
+        <p>Smart India Hackathon project for efficient route scheduling using algorithms and APIs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <label>Name:</label>
+      <input type="text" name="name" required />
+
+      <label>Email:</label>
+      <input type="email" name="email" required />
+
+      <label>Message:</label>
+      <textarea name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="response" class="hidden">Thank you for reaching out!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Vanisha Pathak. All rights reserved.</p>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
